@@ -3,10 +3,12 @@ import java.util.Scanner;
 
 public class GCD {
     public static int findingGCD(int a, int b){
-        while (b != 0){
-            int temp = b;
-            b = a % b;
-            a = temp;
+        int ans = 0;
+        for (int i = 1; i <=a; i++){
+            if (a%i==0 && b%i == 0){
+                ans = i;
+            }
+        }
         }
         return a;
     }
